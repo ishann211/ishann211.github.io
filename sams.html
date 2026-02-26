@@ -93,11 +93,11 @@
     <!-- Page Title -->
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Portfolio Details</h1>
+        <h1 class="mb-2 mb-lg-0">Smart Agriculture Monitoring System (SAMS)</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio Details</li>
+            <li class="current">Project Details</li>
           </ol>
         </nav>
       </div>
@@ -132,15 +132,27 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-1.webp" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                  <img src="assets/img/projects/sams/thumbnail1.jpg" alt="Portfolio Image" class="img-fluid" loading="lazy">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-10.webp" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                  <img src="assets/img/projects/sams/Field Visit1.jpg" alt="Portfolio Image" class="img-fluid" loading="lazy">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-7.webp" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                  <img src="assets/img/projects/sams/Field Visit6.jpg" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/projects/sams/Field Visit4.jpg" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/projects/sams/portableDevice.jpg" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/projects/sams/3d design.jpg" alt="Portfolio Image" class="img-fluid" loading="lazy">
                 </div>
 
               </div>
@@ -152,10 +164,10 @@
             <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
               <h3>Project Information</h3>
               <ul>
-                <li><strong>Category</strong>: Web Development</li>
-                <li><strong>Client</strong>: Victoria Technologies</li>
-                <li><strong>Project date</strong>: 01 March, 2024</li>
-                <li><strong>Project URL</strong>: <a href="#" target="_blank">www.example.com</a></li>
+                <li><strong>Category</strong>: End to End IoT Project</li>
+                <li><strong>Client</strong>: <a href="https://watawalaplantations.lk/" target="_blank">Watawala Palm Oil Plantation</a></li>
+                <li><strong>Time</strong>:  Dec 2024-Jul 2025</li>
+                <li><strong>Project URL</strong>: <a href="https://cepdnaclk.github.io/e20-3yp-Smart-Environmental-Monitoring-System-for-Palm-Oil-Plantation/" target="_blank">www.sams.com</a></li>
               </ul>
             </div>
           </div>
@@ -164,11 +176,36 @@
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
               <h2>Project Overview</h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                This project is a complete IoT-based smart agriculture monitoring system designed to enhance farming decisions by collecting, analyzing, and visualizing real-time environmental and soil data. The list of parameters are,
               </p>
+              <ul>
+                <li>NPK (Nitrogen, Phosphorus, Potassium) values of soil</li>
+                <li>Soil Moisture</li>
+                <li>Rain gauge</li>
+                <li>Sunlight Intensity</li>
+                <li>Temperature</li>
+                <li>Humidity</li>
+              </ul>
               <p>
-                Amet consequatur qui dolore veniam voluptatem voluptatem sit. Non aspernatur atque natus ut cum nam et. Praesentium error dolores rerum minus sequi quia veritatis eum. Eos et doloribus doloremque nesciunt molestiae laboriosam.
+                The system uses multiple hardware devices to capture sensor readings and transmits them via MQTT to Firestore, enabling live monitoring through a mobile app (Flutter) and web app (React + Vite).
               </p>
+              <p>An independent ML model (YOLOv5) processes aerial images to detect tree count and assess tree health, hosted via Cloud Run.</p>
+              <p><strong>Hardware Devices,</strong></p>
+              <ul>
+                <li>Portable Unit- Field workers collect soil data using ESP32, NPK, Moisture, GPS, RTC, SD card, LCD. Stores data offline when Wi-Fi is unavailable.</li>
+                <li>Fixed Unit- Continuously monitors field data. Sends periodic readings to the cloud via MQTT with Wi-Fi and status indicators.</li>
+              </ul>
+
+              <p><strong>Mobile App,</strong></p>
+              <p>Built with Flutter + Firebase, provides real-time and historical sensor data, interactive graphs, offline sync, and alert systems.</p>
+              <p><strong>Web App,</strong></p>
+              <p>Made with React + Vite, hosted on Firebase, offering live dashboards, trend analysis, geo-mapping of devices, and sensor status.</p>
+
+              <p><strong>ML Model,</strong></p>
+              <p>Uses YOLOv5 to analyze aerial images and detect tree count and tree health (Healthy/Unhealthy). Deployed on Google Cloud Run, accessible via API for web/mobile input.</p>
+
+              <p><strong>Outcome,</strong></p>
+              <p>Accurate, geo-tagged insights for precision farming with a deployment-ready architecture.</p>
 
               <div class="features mt-4">
                 <h3>Key Features</h3>
@@ -176,7 +213,7 @@
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
                       <i class="bi bi-check-circle-fill"></i>
-                      <h4>Responsive Design</h4>
+                      <h4>Real-time IoT data over MQTT</h4>
                       <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
                     </div>
                   </div>
@@ -221,14 +258,14 @@
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+        <!-- <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p> -->
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
       </div>
     </div>
 
